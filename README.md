@@ -1,7 +1,7 @@
 
-<img src="https://github.com/Neternels/AddonApp/blob/main/imgs/icon.png?raw=true" alt="drawing" width="200"/>
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/icon.png?raw=true" alt="drawing" width="200"/>
 
-# NetErnels Addon
+# ViP3R Addon
 
 #### Requirements
 
@@ -18,4 +18,4 @@
 
 
 #### Screenshots
-<img src="https://github.com/Neternels/AddonApp/blob/main/imgs/Screenshot1.png?raw=true" alt="drawing" width="400"/>
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.png?raw=true" alt="drawing" width="400"/>

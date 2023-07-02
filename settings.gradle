@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "NetErnels Addon"
+rootProject.name = "ViP3R KERNELS"
 include ':app'

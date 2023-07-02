@@ -1,0 +1,7 @@
+com.zalexdev.ViP3Raddon.test.app-androidTest-0 D:\GITHUB\AddonApp\app\build\generated\res\resValues\androidTest\debug
+com.zalexdev.ViP3Raddon.test.app-androidTest-1 D:\GITHUB\AddonApp\app\build\generated\res\rs\androidTest\debug
+com.zalexdev.ViP3Raddon.test.app-mergeDebugAndroidTestResources-2 D:\GITHUB\AddonApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.zalexdev.ViP3Raddon.test.app-mergeDebugAndroidTestResources-3 D:\GITHUB\AddonApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.zalexdev.ViP3Raddon.test.app-merged_res-4 D:\GITHUB\AddonApp\app\build\intermediates\merged_res\debugAndroidTest
+com.zalexdev.ViP3Raddon.test.app-androidTest-5 D:\GITHUB\AddonApp\app\src\androidTest\res
+com.zalexdev.ViP3Raddon.test.app-androidTestDebug-6 D:\GITHUB\AddonApp\app\src\androidTestDebug\res

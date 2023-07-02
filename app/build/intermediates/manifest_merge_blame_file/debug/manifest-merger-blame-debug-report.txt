@@ -1,0 +1,105 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zalexdev.ViP3Raddon"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:5:5-80
+11-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:5:22-78
+12
+13    <application
+13-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:6:5-36:19
+14        android:allowBackup="true"
+14-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\CODER\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher"
+19-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:10:9-48
+20        android:supportsRtl="true"
+20-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.ViP3RAddon" >
+22-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:12:9-48
+23        <activity
+23-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:14:9-22:20
+24            android:name="com.zalexdev.ViP3Raddon.MainActivity"
+24-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:15:13-41
+25            android:exported="true" >
+25-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:16:13-36
+26            <intent-filter>
+26-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:18:17-69
+27-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:20:17-77
+29-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <meta-data
+33-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:23:9-25:57
+34            android:name="preloaded_fonts"
+34-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:24:13-43
+35            android:resource="@array/preloaded_fonts" />
+35-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:25:13-54
+36
+37        <receiver
+37-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:26:9-35:20
+38            android:name="com.zalexdev.ViP3Raddon.BootReceiver"
+38-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:26:19-47
+39            android:enabled="true"
+39-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:28:13-35
+40            android:exported="true"
+40-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:29:13-36
+41            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+41-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:27:13-75
+42            <intent-filter android:priority="999" >
+42-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:30:13-34:29
+42-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:30:28-50
+43                <action android:name="android.intent.action.BOOT_COMPLETED" />
+43-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:31:17-79
+43-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:31:25-76
+44                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+44-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:32:17-82
+44-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:32:25-79
+45            </intent-filter>
+46        </receiver>
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+50            android:authorities="com.zalexdev.ViP3Raddon.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+58        </provider>
+59    </application>
+60
+61</manifest>
