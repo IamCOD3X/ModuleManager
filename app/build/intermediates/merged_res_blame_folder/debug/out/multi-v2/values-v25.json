@@ -4,7 +4,7 @@
             "outputFile": "com.zalexdev.ViP3Raddon.app-mergeDebugResources-27:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\CODER\\.gradle\\caches\\transforms-3\\5d666d306352f7fdca8df50525096bc2\\transformed\\appcompat-1.5.1\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\CODER\\.gradle\\caches\\transforms-3\\45b3b0cb8a82c4f04a29437990cd35c9\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

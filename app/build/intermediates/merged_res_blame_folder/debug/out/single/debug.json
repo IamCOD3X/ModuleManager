@@ -32,12 +32,12 @@
         "source": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-main-31:\\mipmap-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-merged_res-29:\\layout_activity_loading.xml.flat",
-        "source": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-main-31:\\layout\\activity_loading.xml"
-    },
-    {
         "merged": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-merged_res-29:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-main-31:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-31:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\CODER\\.gradle\\daemon\\7.3.3\\com.zalexdev.ViP3Raddon.app-merged_res-29:\\mipmap-mdpi_ic_launcher.png.flat",

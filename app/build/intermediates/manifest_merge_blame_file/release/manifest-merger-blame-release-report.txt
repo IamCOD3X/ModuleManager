@@ -1,0 +1,114 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zalexdev.ViP3Raddon"
+4    android:versionCode="2"
+5    android:versionName="1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:5:5-80
+11-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:5:22-78
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.zalexdev.ViP3Raddon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.zalexdev.ViP3Raddon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:6:5-36:19
+20        android:allowBackup="true"
+20-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] C:\Users\CODER\.gradle\caches\transforms-3\6572e896cf691f4b13ad10c561cb3105\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:8:9-43
+23        android:label="@string/app_name"
+23-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:9:9-41
+24        android:roundIcon="@mipmap/ic_launcher"
+24-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:10:9-48
+25        android:supportsRtl="true"
+25-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:11:9-35
+26        android:theme="@style/Theme.ViP3RAddon" >
+26-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:12:9-48
+27        <activity
+27-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:14:9-22:20
+28            android:name="com.zalexdev.ViP3Raddon.MainActivity"
+28-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:15:13-41
+29            android:exported="true" >
+29-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:16:13-36
+30            <intent-filter>
+30-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:17:13-21:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:18:17-69
+31-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:18:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:20:17-77
+33-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:20:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <meta-data
+37-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:23:9-25:57
+38            android:name="preloaded_fonts"
+38-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:24:13-43
+39            android:resource="@array/preloaded_fonts" />
+39-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:25:13-54
+40
+41        <receiver
+41-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:26:9-35:20
+42            android:name="com.zalexdev.ViP3Raddon.BootReceiver"
+42-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:26:19-47
+43            android:enabled="true"
+43-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:28:13-35
+44            android:exported="true"
+44-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:29:13-36
+45            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+45-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:27:13-75
+46            <intent-filter android:priority="999" >
+46-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:30:13-34:29
+46-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:30:28-50
+47                <action android:name="android.intent.action.BOOT_COMPLETED" />
+47-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:31:17-79
+47-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:31:25-76
+48                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+48-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:32:17-82
+48-->D:\GITHUB\AddonApp\app\src\main\AndroidManifest.xml:32:25-79
+49            </intent-filter>
+50        </receiver>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+54            android:authorities="com.zalexdev.ViP3Raddon.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\CODER\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\CODER\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+62        </provider>
+63    </application>
+64
+65</manifest>

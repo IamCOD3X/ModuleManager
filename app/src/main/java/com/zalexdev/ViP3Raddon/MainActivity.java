@@ -24,6 +24,71 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Retrieve kernel version
+        String kernelVersion = System.getProperty("os.version");
+
+        // Update the TextView with the kernel version
+
+        TextView deviceInfoTextView;
+        deviceInfoTextView = findViewById(R.id.deviceInfoTextView);
+
+        // Retrieve device information
+        String manufacturer = android.os.Build.MANUFACTURER;
+        String model = android.os.Build.MODEL;
+        String AndroidVersion = android.os.Build.VERSION.RELEASE;
+        switch (AndroidVersion){
+            case "13":
+                AndroidVersion = AndroidVersion + " -> Tiramisu";
+                break;
+            case "12":
+                AndroidVersion = AndroidVersion + " -> Snow Cone";
+                break;
+            case "11":
+                AndroidVersion = AndroidVersion + " -> Red Velvet Cake";
+                break;
+            case "10":
+                AndroidVersion = AndroidVersion + " -> Quince Tart";
+                break;
+            case "9":
+                AndroidVersion = AndroidVersion + " -> Pie";
+                break;
+            case "8":
+                AndroidVersion = AndroidVersion + " -> Oreo";
+                break;
+            case "7":
+                AndroidVersion = AndroidVersion + " -> Nougat";
+                break;
+            case "6":
+                AndroidVersion = AndroidVersion + " -> Marshmallow";
+                break;
+        }
+        String device = android.os.Build.DEVICE;
+        String board = android.os.Build.BOARD;
+        String hardware = android.os.Build.HARDWARE;
+        String bootloader = android.os.Build.BOOTLOADER;
+        String kernelVersionInfo;
+
+        // Check if kernelVersion contains "ViP3R" and set the appropriate value for kernelVersionInfo
+        if (kernelVersion.contains("-ViP3R")) {
+            kernelVersionInfo = "COD3X@RYZEN";
+        } else {
+            kernelVersionInfo = "NON-ViP3R";
+        }
+
+        // Create a formatted string with device information
+        String deviceInfo = "Manufacturer: " + manufacturer + "\n"
+                + "Model: " + model + "\n"
+                + "Android Version: " + AndroidVersion + "\n"
+                + "Device: " + device + "\n"
+                + "Board: " + board + "\n"
+                + "Hardware: " + hardware + "\n"
+                + "Bootloader: " + bootloader + "\n"
+                + "Kernel Version: " + kernelVersionInfo + "\n" + kernelVersion;
+
+        // Update the TextView with the device information
+        deviceInfoTextView.setText(deviceInfo);
+
         RecyclerView recyclerView = findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         TextView loading = findViewById(R.id.loading);

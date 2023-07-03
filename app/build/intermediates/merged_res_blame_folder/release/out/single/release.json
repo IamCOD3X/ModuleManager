@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/font_days_one.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/font/days_one.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/layout_module_item.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/layout/module_item.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.zalexdev.ViP3Raddon.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.zalexdev.ViP3Raddon.app-main-30:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
