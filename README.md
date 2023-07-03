@@ -3,13 +3,13 @@
 
 # Module Loader
 
-#### Requirements
+### Requirements
 
 - Android 5.1+
 - Root (Magisk 23.0+)
 - Modules in /system/lib/modules/
 
-#### Features
+### Features
 1. Dynamically display available modules
 2. Insmod/Rmmod modules
 3. Detect active modules
@@ -17,6 +17,12 @@
 5. Load modules on boot
 
 
-#### Screenshots
+### Screenshots
 <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp;     <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/>
 
+
+### Original Thread 
+Also check the app version released by the Neternel Team
+[NetErnel Addon](https://github.com/Neternels/AddonApp.git)
+
+Also Thankyou @Neternel for the source code.
