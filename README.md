@@ -1,7 +1,7 @@
 
 <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/icon.png?raw=true" alt="drawing" width="200"/>
 
-# ViP3R Addon
+# Module Loader
 
 #### Requirements
 
@@ -18,5 +18,5 @@
 
 
 #### Screenshots
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/> <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot2.jpg?raw=true" alt="drawing" width="400"/>
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp;     <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/>
 
