@@ -18,4 +18,5 @@
 
 
 #### Screenshots
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.png?raw=true" alt="drawing" width="400"/>
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/> <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot2.jpg?raw=true" alt="drawing" width="400"/>
+
