@@ -1,15 +1,15 @@
 
 <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/icon.png?raw=true" alt="drawing" width="200"/>
 
-# ViP3R Addon
+# Module Loader
 
-#### Requirements
+### Requirements
 
 - Android 5.1+
 - Root (Magisk 23.0+)
 - Modules in /system/lib/modules/
 
-#### Features
+### Features
 1. Dynamically display available modules
 2. Insmod/Rmmod modules
 3. Detect active modules
@@ -17,5 +17,12 @@
 5. Load modules on boot
 
 
-#### Screenshots
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.png?raw=true" alt="drawing" width="400"/>
+### Screenshots
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp;     <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/>
+
+
+### Original Thread 
+Also check the app version released by the Neternel Team <br>
+[NetErnel Addon](https://github.com/Neternels/AddonApp.git)
+
+Also Thankyou @Neternel for the source code.
