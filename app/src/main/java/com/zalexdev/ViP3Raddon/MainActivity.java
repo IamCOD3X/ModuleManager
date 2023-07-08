@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
             case "13":
                 AndroidVersion = AndroidVersion + " -> Tiramisu";
                 break;
+            case "12.1":
+                AndroidVersion = AndroidVersion + " -> Snow Cone";
             case "12":
                 AndroidVersion = AndroidVersion + " -> Snow Cone";
                 break;
@@ -55,8 +57,19 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "8":
                 AndroidVersion = AndroidVersion + " -> Oreo";
+            case "8.1":
+                AndroidVersion = AndroidVersion + " -> Oreo";
                 break;
             case "7":
+                AndroidVersion = AndroidVersion + " -> Nougat";
+                break;
+            case "7.1":
+                AndroidVersion = AndroidVersion + " -> Nougat";
+                break;
+            case "7.1.1":
+                AndroidVersion = AndroidVersion + " -> Nougat";
+                break;
+            case "7.1.2":
                 AndroidVersion = AndroidVersion + " -> Nougat";
                 break;
             case "6":
@@ -67,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         String board = android.os.Build.BOARD;
         String hardware = android.os.Build.HARDWARE;
         String bootloader = android.os.Build.BOOTLOADER;
+        String codename = android.os.Build.PRODUCT;
         String kernelVersionInfo;
 
         // Check if kernelVersion contains "ViP3R" and set the appropriate value for kernelVersionInfo
@@ -84,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 + "Board: " + board + "\n"
                 + "Hardware: " + hardware + "\n"
                 + "Bootloader: " + bootloader + "\n"
+                + "Codename: " + codename + "\n"
                 + "Kernel Version: " + kernelVersionInfo + "\n" + kernelVersion;
 
         // Update the TextView with the device information
