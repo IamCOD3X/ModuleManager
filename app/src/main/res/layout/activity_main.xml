@@ -29,7 +29,7 @@ tools:context=".MainActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/days_one"
-        android:text="Module Loader v1.2"
+        android:text="Module Loader v1.3"
         android:textColor="@color/DimGrey"
         android:textSize="20dp"
         android:layout_gravity="center"
@@ -137,7 +137,7 @@ tools:context=".MainActivity">
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:autoLink="web"
-                android:text="This app is a little 🎁 from @zalexdev to the NetHunter Community. \nViP3R KERNELs - https://www.viper-kernel.tech \nThankYou @NetErnels for the Base Code"
+                android:text="Get ViP3R KERNEL at https://www/viper-kernel.tech"
                 android:textColorLink="#2962FF"
                 android:textIsSelectable="true" />
 
