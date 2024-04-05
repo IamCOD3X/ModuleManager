@@ -1,4 +1,4 @@
-package com.zalexdev.ViP3Raddon;
+package com.cod3x.ViP3Raddon;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -85,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Check if kernelVersion contains "ViP3R" and set the appropriate value for kernelVersionInfo
         if (kernelVersion.contains("-ViP3R")) {
+            kernelVersionInfo = "COD3X@RYZEN";
+        }
+        else if (kernelVersion.contains("-ViPER")) {
             kernelVersionInfo = "COD3X@RYZEN";
         } else {
             kernelVersionInfo = "NON-ViP3R";

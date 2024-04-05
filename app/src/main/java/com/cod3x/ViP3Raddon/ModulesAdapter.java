@@ -1,8 +1,8 @@
-package com.zalexdev.ViP3Raddon;
+package com.cod3x.ViP3Raddon;
 
 
-import static com.zalexdev.ViP3Raddon.MainActivity.contains;
-import static com.zalexdev.ViP3Raddon.MainActivity.customCommand;
+import static com.cod3x.ViP3Raddon.MainActivity.contains;
+import static com.cod3x.ViP3Raddon.MainActivity.customCommand;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

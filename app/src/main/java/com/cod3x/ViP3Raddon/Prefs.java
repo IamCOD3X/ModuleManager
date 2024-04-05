@@ -1,4 +1,4 @@
-package com.zalexdev.ViP3Raddon;
+package com.cod3x.ViP3Raddon;
 
 import android.content.Context;
 import android.content.SharedPreferences;

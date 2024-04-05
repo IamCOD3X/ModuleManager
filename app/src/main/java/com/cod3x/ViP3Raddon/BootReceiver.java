@@ -1,7 +1,7 @@
-package com.zalexdev.ViP3Raddon;
+package com.cod3x.ViP3Raddon;
 
-import static com.zalexdev.ViP3Raddon.MainActivity.contains;
-import static com.zalexdev.ViP3Raddon.MainActivity.customCommand;
+import static com.cod3x.ViP3Raddon.MainActivity.contains;
+import static com.cod3x.ViP3Raddon.MainActivity.customCommand;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -53,7 +53,7 @@ public class BootReceiver extends BroadcastReceiver {
     }
     private void createNotificationChannel(Context context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "NetErnels Addon";
+            CharSequence name = "ViP3R Addon";
             String description = "Driver status notification..";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
             NotificationChannel channel = new NotificationChannel("NE", name, importance);
