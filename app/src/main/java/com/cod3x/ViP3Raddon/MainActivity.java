@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         String model = android.os.Build.MODEL;
         String AndroidVersion = android.os.Build.VERSION.RELEASE;
         switch (AndroidVersion){
+            case "14":
+            AndroidVersion = AndroidVersion + " -> Upside Down Cake";
+            break;
             case "13":
                 AndroidVersion = AndroidVersion + " -> Tiramisu";
                 break;
