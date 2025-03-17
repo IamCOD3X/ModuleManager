@@ -1,13 +1,13 @@
 
 <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/icon.png?raw=true" alt="drawing" width="200"/>
 
-# Module Loader
+# Module Manager
 
 ### Requirements
 
 - Android 5.1+
 - Root (Magisk 23.0+)
-- Modules in /system/lib/modules/
+- Modules in **/system/lib/modules/** and **vendor_dlkm/lib/modules**
 
 ### Features
 1. Dynamically display available modules
@@ -25,4 +25,4 @@
 Also check the app version released by the Neternel Team <br>
 [NetErnel Addon](https://github.com/Neternels/AddonApp.git)
 
-Also Thankyou @Neternel for the source code.
+Thankyou [Neternel](https://github.com/Neternels) for the source code.
