@@ -7,7 +7,7 @@
 
 - Android 5.1+
 - Root (Magisk 23.0+)
-- Modules in /system/lib/modules/
+- Modules in /vendor_dlkm/lib/modules/
 
 ### Features
 1. Dynamically display available modules
