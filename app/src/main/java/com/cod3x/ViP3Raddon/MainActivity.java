@@ -88,10 +88,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Check if kernelVersion contains "ViP3R" and set the appropriate value for kernelVersionInfo
         if (kernelVersion.contains("-ViP3R")) {
-            kernelVersionInfo = "COD3X@RYZEN";
+            kernelVersionInfo = "ViP3R OFFICIAL";
         }
         else if (kernelVersion.contains("-ViPER")) {
-            kernelVersionInfo = "COD3X@RYZEN";
+            kernelVersionInfo = "ViP3R OFFICIAL";
         } else {
             kernelVersionInfo = "NON-ViP3R";
         }
@@ -105,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                 + "Hardware: " + hardware + "\n"
                 + "Bootloader: " + bootloader + "\n"
                 + "Codename: " + codename + "\n"
-                + "Kernel Version: " + kernelVersionInfo + "\n" + kernelVersion;
+                + "Kernel Build: " + kernelVersionInfo + "\n"
+                + "Kernel Version: " + kernelVersion;
 
         // Update the TextView with the device information
         deviceInfoTextView.setText(deviceInfo);
