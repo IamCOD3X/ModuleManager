@@ -13,7 +13,7 @@ public class Prefs {
     public SharedPreferences preferences;
     public Prefs(Context context1) {
         context = context1;
-        preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        preferences = context.getSharedPreferences("ViP3Raddon_Prefs", Context.MODE_PRIVATE);
     }
     public void putListString(String key, ArrayList<String> stringList) {
         isNull(key);
