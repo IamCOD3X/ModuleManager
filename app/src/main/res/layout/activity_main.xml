@@ -19,17 +19,16 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/days_one"
-        android:text="ViP3R-KERNEL"
+        android:text="ViP3R KERNELs 🐍"
         android:textColor="@color/DimGrey"
         android:layout_gravity="center"
-        android:textSize="30dp"
-       />
+        android:textSize="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/days_one"
-        android:text="Module Loader v1.4"
+        android:text="Module Manager v1.5"
         android:textColor="@color/DimGrey"
         android:textSize="15dp"
         android:layout_gravity="center"/>
