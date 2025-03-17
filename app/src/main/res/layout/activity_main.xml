@@ -137,7 +137,7 @@ tools:context=".MainActivity">
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:autoLink="web"
-                android:text="Get ViP3R KERNEL at https://www.viper-kernel.tech"
+                android:text="Build for Nethunter with 💖\nGet ViP3R KERNEL at https://www.viperkernels.com"
                 android:textColorLink="#2962FF"
                 android:textIsSelectable="true" />
 
