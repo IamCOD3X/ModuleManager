@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -39,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         String AndroidVersion = android.os.Build.VERSION.RELEASE;
         switch (AndroidVersion){
             case "14":
-            AndroidVersion = AndroidVersion + " -> Upside Down Cake";
-            break;
+                AndroidVersion = AndroidVersion + " -> Upside Down Cake";
+                break;
             case "13":
                 AndroidVersion = AndroidVersion + " -> Tiramisu";
                 break;
@@ -124,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         new Thread(() -> {
             ArrayList<String> pathList = customCommand("ls /sys/bus/usb/drivers");
             ArrayList<String> driverList = customCommand("ls /system/lib/modules/");
-            ModulesAdapter adapter = new ModulesAdapter(MainActivity.this,MainActivity.this,driverList,pathList);
+            ModulesAdapter adapter = new ModulesAdapter(MainActivity.this,MainActivity.this, pathList, driverList);
             runOnUiThread(() -> {
                 recyclerView.setAdapter(adapter);
                 loading.setVisibility(View.INVISIBLE);
@@ -134,6 +136,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }).start();
+
+        Button openSecondaryActivityButton = findViewById(R.id.openSecondaryActivityButton);
+        openSecondaryActivityButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SecondaryActivity.class);
+            startActivity(intent);
+        });
 
     }
 

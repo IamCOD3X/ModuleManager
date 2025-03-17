@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -45,56 +45,67 @@ public class ModulesAdapter extends RecyclerView.Adapter<ModulesAdapter.ViewHold
         return new ViewHolder(v);
     }
 
+    public void updateDriverList(ArrayList<String> driverList) {
+        activity.runOnUiThread(() -> {
+            TextView list = activity.findViewById(R.id.driverList);
+            if (list != null) { // Prevent NullPointerException
+                list.setText("");
+                for (String s : driverList) {
+                    list.append(s + "\n");
+                }
+            } else {
+                Log.e("ModulesAdapter", "driverList TextView is NULL!");
+            }
+        });
+    }
+
     @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder adapter, @SuppressLint("RecyclerView") final int position) {
         adapter.name.setText(pathList.get(position).replace(".ko", ""));
         adapter.switchMaterial.setChecked(contains(driverList, pathList.get(position).replace(".ko", "")));
+
         adapter.switchMaterial.setOnClickListener(v -> {
             boolean checked = adapter.switchMaterial.isChecked();
             adapter.switchMaterial.setEnabled(false);
-            if (checked){
-            new Thread(() -> {
-                customCommand("insmod /system/lib/modules/"+pathList.get(position));
-                ArrayList<String> driverList = customCommand("ls /sys/bus/usb/drivers");
-                if (contains(driverList, pathList.get(position).replace(".ko", ""))){
-                    toaster("Module loaded successfully");
-                    prefs.addModule(pathList.get(position));
-                }else{
-                    toaster("Module failed to load");
-                    activity.runOnUiThread(() -> adapter.switchMaterial.setChecked(false));
-                }
-                activity.runOnUiThread(() -> {
-                    adapter.switchMaterial.setEnabled(true);
-                    TextView list = activity.findViewById(R.id.driverList);
-                    list.setText("");
-                    for (String s : driverList){
-                        list.append(s + "\n");
-                    }
-                });
 
-            }).start();
-            }else{
+            // Determine correct path based on 'id'
+            String modulePath = (id == 0)
+                    ? "/system/lib/modules/" + pathList.get(position)
+                    : "/vendor_dlkm/lib/modules/" + pathList.get(position);
+
+            if (checked) {
                 new Thread(() -> {
-                customCommand("rmmod /system/lib/modules/"+pathList.get(position));
-                ArrayList<String> driverList = customCommand("ls /sys/bus/usb/drivers");
-                if (!contains(driverList, pathList.get(position).replace(".ko", ""))){
-                    toaster("Module unloaded successfully");
-                    prefs.removeModule(pathList.get(position));
-                }else{
-                    toaster("Module failed to unload");
-                    activity.runOnUiThread(() -> adapter.switchMaterial.setChecked(true));
-                }
-                activity.runOnUiThread(() -> {
-                    adapter.switchMaterial.setEnabled(true);
-                    TextView list = activity.findViewById(R.id.driverList);
-                    list.setText("");
-                    for (String s : driverList){
-                        list.append(s + "\n");
-                    }
-                });
+                    customCommand("insmod " + modulePath);
+                    ArrayList<String> driverList = customCommand("ls /sys/bus/usb/drivers");
 
-            }).start();
+                    if (contains(driverList, pathList.get(position).replace(".ko", ""))) {
+                        toaster("Module loaded successfully");
+                        prefs.addModule(pathList.get(position));
+                    } else {
+                        toaster("Module failed to load");
+                        activity.runOnUiThread(() -> adapter.switchMaterial.setChecked(false));
+                    }
+
+                    updateDriverList(driverList);
+
+                }).start();
+            } else {
+                new Thread(() -> {
+                    customCommand("rmmod " + modulePath);
+                    ArrayList<String> driverList = customCommand("ls /sys/bus/usb/drivers");
+
+                    if (!contains(driverList, pathList.get(position).replace(".ko", ""))) {
+                        toaster("Module unloaded successfully");
+                        prefs.removeModule(pathList.get(position));
+                    } else {
+                        toaster("Module failed to unload");
+                        activity.runOnUiThread(() -> adapter.switchMaterial.setChecked(true));
+                    }
+
+                    updateDriverList(driverList);
+
+                }).start();
             }
         });
     }
