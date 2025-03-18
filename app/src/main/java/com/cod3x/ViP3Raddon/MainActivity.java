@@ -123,12 +123,15 @@ public class MainActivity extends AppCompatActivity {
             Prefs prefs = new Prefs(MainActivity.this);
             prefs.putBoolean("boot", isChecked);
         });
+
         new Thread(() -> {
             ArrayList<String> pathList = customCommand("ls /sys/bus/usb/drivers");
             ArrayList<String> driverList = customCommand("ls /system/lib/modules/");
-            ModulesAdapter adapter = new ModulesAdapter(MainActivity.this,MainActivity.this, pathList, driverList);
+            ModulesAdapter adapter = new ModulesAdapter(MainActivity.this,MainActivity.this, driverList, pathList);
+            adapter.id = 0; // Set ID to 0 for system modules
             runOnUiThread(() -> {
                 recyclerView.setAdapter(adapter);
+                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
                 loading.setVisibility(View.INVISIBLE);
                 driverListText.setText("");
                 for (String s : pathList){
