@@ -26,8 +26,8 @@ public class SecondaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondary);
 
-        RecyclerView recyclerView = findViewById(R.id.list_vd);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        RecyclerView recyclerView_vd = findViewById(R.id.list_vd);
+        recyclerView_vd.setLayoutManager(new LinearLayoutManager(this));
         TextView loading_vd = findViewById(R.id.loading_vd);
         TextView driverListText_vd = findViewById(R.id.driverList_vd);
         CheckBox checkBox_vd = findViewById(R.id.boot_vd);
@@ -38,16 +38,16 @@ public class SecondaryActivity extends AppCompatActivity {
         });
 
         new Thread(() -> {
-            ArrayList<String> driverList_vd = customCommand("ls /sys/bus/usb/drivers");
-            ArrayList<String> pathList_vd = customCommand("ls /vendor_dlkm/lib/modules/");
-            ModulesAdapter adapter = new ModulesAdapter(SecondaryActivity.this, SecondaryActivity.this, pathList_vd, driverList_vd);
+            ArrayList<String> pathList_vd = customCommand_vd("ls /sys/bus/usb/drivers");
+            ArrayList<String> driverList_vd = customCommand_vd("ls /vendor_dlkm/lib/modules/");
+            ModulesAdapter adapter = new ModulesAdapter(SecondaryActivity.this, SecondaryActivity.this, driverList_vd, pathList_vd);
             adapter.id = 1; // Set ID to 1 for vendor_dlkm modules
             runOnUiThread(() -> {
-                recyclerView.setAdapter(adapter);
-                recyclerView.setLayoutManager(new LinearLayoutManager(SecondaryActivity.this));
+                recyclerView_vd.setAdapter(adapter);
+                recyclerView_vd.setLayoutManager(new LinearLayoutManager(SecondaryActivity.this));
                 loading_vd.setVisibility(View.INVISIBLE);
                 driverListText_vd.setText("");
-                for (String s : driverList_vd) {
+                for (String s : pathList_vd) {
                     driverListText_vd.append(s + "\n");
                 }
             });
@@ -60,8 +60,8 @@ public class SecondaryActivity extends AppCompatActivity {
         });
     }
 
-    public static ArrayList<String> customCommand(String command) {
-        ArrayList<String> result = new ArrayList<>();
+    public static ArrayList<String> customCommand_vd(String command) {
+        ArrayList<String> result_vd = new ArrayList<>();
         Process process = generateSuProcess();
         try {
             OutputStream stdin = process.getOutputStream();
@@ -71,23 +71,23 @@ public class SecondaryActivity extends AppCompatActivity {
             stdin.write(("exit\n").getBytes());
             stdin.flush();
             stdin.close();
-            BufferedReader br = new BufferedReader(new InputStreamReader(stdout));
+            BufferedReader br3 = new BufferedReader(new InputStreamReader(stdout));
             String line;
-            while ((line = br.readLine()) != null) {
+            while ((line = br3.readLine()) != null) {
                 Log.d("OUTPUT", line);
-                result.add(line);
+                result_vd.add(line);
             }
-            br.close();
-            BufferedReader br2 = new BufferedReader(new InputStreamReader(stderr));
+            br3.close();
+            BufferedReader br4 = new BufferedReader(new InputStreamReader(stderr));
             String lineError;
-            while ((lineError = br2.readLine()) != null) {
+            while ((lineError = br4.readLine()) != null) {
                 Log.e("ERROR", lineError);
-                result.add(lineError);
+                result_vd.add(lineError);
             }
-            br2.close();
+            br4.close();
         } catch (IOException ignored) {}
         process.destroy();
-        return result;
+        return result_vd;
     }
 
     public static Process generateSuProcess() {
@@ -105,12 +105,8 @@ public class SecondaryActivity extends AppCompatActivity {
         return process;
     }
 
-    public static boolean contains(ArrayList<String> list, String item) {
-        for (String s : list) {
-            if (s.contains(item)) {
-                return true;
-            }
-        }
+    public static boolean contains_vd(ArrayList<String> list, String item){
+        for (String s : list){if (s.contains(item)){return true;}}
         return false;
     }
 }
