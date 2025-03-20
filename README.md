@@ -3,6 +3,8 @@
 
 # Module Manager
 
+It is a powerful app that allows users to manage kernel modules stored in /system/lib/modules and /vendor_dlkm/lib/modules. With this app, you can load, unload, and configure modules effortlessly, giving you greater control over your device’s kernel functionalities. Perfect for Kali Nethunter users and other Pentester using Android! 🚀
+
 ### Requirements
 
 - Android 5.1+
@@ -18,8 +20,9 @@
 
 
 ### Screenshots
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp;     <img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/>
-
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp; 
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/> &ensp; 
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot2.jpg?raw=true" alt="drawing" width="400"/>
 
 ### Original Thread 
 Also check the app version released by the Neternel Team <br>
