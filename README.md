@@ -20,9 +20,9 @@ It is a powerful app that allows users to manage kernel modules stored in /syste
 
 
 ### Screenshots
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="400"/> &ensp; 
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="400"/> &ensp; 
-<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot2.jpg?raw=true" alt="drawing" width="400"/>
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot.jpg?raw=true" alt="drawing" width="300"/> &ensp; 
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot1.jpg?raw=true" alt="drawing" width="300"/> &ensp; 
+<img src="https://github.com/IamCOD3X/AddonApp/blob/main/imgs/Screenshot2.jpg?raw=true" alt="drawing" width="300"/>
 
 ### Original Thread 
 Also check the app version released by the Neternel Team <br>
